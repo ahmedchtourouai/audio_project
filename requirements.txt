@@ -1,0 +1,10 @@
+numpy>=1.23
+librosa>=0.10
+matplotlib>=3.7
+tensorflow>=2.13
+scikit-learn>=1.3
+seaborn>=0.12
+soundfile>=0.12
+fastapi
+uvicorn
+python-multipart

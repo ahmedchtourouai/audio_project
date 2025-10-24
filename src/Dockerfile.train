@@ -1,0 +1,26 @@
+# Base image
+FROM python:3.11-slim
+
+# Set environment variables
+ENV PYTHONUNBUFFERED=1
+ENV TF_CPP_MIN_LOG_LEVEL=2
+
+# Set working directory
+WORKDIR /app
+
+# Copy project files
+COPY . /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    ffmpeg \
+    libsndfile1 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Python dependencies
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
+
+# Default command (can be overridden)
+CMD ["python", "main_train.py", "--data_dir", "data/Tech Test", "--output_dir", "output"]
