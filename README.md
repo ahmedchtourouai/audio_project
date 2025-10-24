@@ -1,6 +1,5 @@
 # Audio Classification Project
-
-## 1️⃣ Create a Virtual Environment
+1️⃣ Create a Virtual Environment
 
 ```bash
 python -m venv mlops_env
