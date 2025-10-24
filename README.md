@@ -1,7 +1,7 @@
 # Audio Classification Project
-1️⃣ Create a Virtual Environment
 
 ```bash
+1️⃣ Create a Virtual Environment
 python -m venv mlops_env
 2️⃣ Activate the Virtual Environment (PowerShell)
 
