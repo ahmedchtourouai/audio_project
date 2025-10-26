@@ -6,7 +6,7 @@ REPO_NAME="audio_project"
 DAGSHUB_USER="ahmedchtourou.ai"
 DAGSHUB_TOKEN="4bf53230315d72afc16dd001b2188ae75c346f48"  # replace with your token
 DATA_DIR="data/Tech Test"
-PROCESSED_DIR="data/processed"
+PROCESSED_DIR="data/Tech Test/processed"
 
 # 1️⃣ Initialize git
 git init
