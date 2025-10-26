@@ -1,5 +1,7 @@
 import requests
 from pathlib import Path
+import wandb
+print(wandb.__version__)
 
 url = "http://127.0.0.1:8000/predict/"
 file_path = Path("data/Tech Test/AS_1.wav")
